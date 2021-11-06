@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --main-color: #f08080;
+  --primary: #fff;
+  --background-firstPage: #fdede4;
+  ---dark-one: #333;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/*********Container******************/
+.container {
+  position: relative;
+  z-index: 5;
+  /* max-width: 92rem; */
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+
+/***Navbar****/
+/***img***/
+.logo {
+  width: 3.25rem;
+  margin-bottom: 3rem;
+  margin-top: 1.2rem;
+  margin-right: 15rem;
+  display: flex;
+  align-items: center;
+}
+
+/*** Links ****/
+nav a.nav-link {
+  letter-spacing: 0.04rem;
+  cursor: pointer;
+  float: right;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  float: right;
+}
+
+.navbar-nav > li > a {
+  float: right;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(---dark-one) !important;
+  /* border-top: 0.1875rem solid var(---dark-one); */
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem;
+  float: right;
+}
+
+.navbar-expand-lg {
+  background-color: var(--background-firstPage);
+  color: var(---dark-one);
+}
+
+/* .navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  border-top: 0.1875rem solid var(--main-color);
+} */
+
+/*********************Az Inja be Payeen khode code ezafeh kardeh********************************/
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
