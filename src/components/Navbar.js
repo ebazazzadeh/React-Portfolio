@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../img/logo.png";
+//Import React scroll from the website https://www.npmjs.com/package/react-scroll
+import { Link } from "react-scroll";
 // Improt React FontAwesome from website https://www.npmjs.com/package/@fortawesome/react-fontawesome and
 // import instruction from https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,7 +10,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container">
         <div className="navbar-brand">
           <img className="logo" src={logo} alt="Logo" />
@@ -31,28 +33,20 @@ const Navbar = () => {
         >
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <Link smooth={true} to="aboutMe" className="nav-Link" href="#">
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link smooth={true} to="projects" className="nav-Link" href="#">
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link smooth={true} to="contacts" className="nav-Link" href="#">
                 Contacts
-              </a>
+              </Link>
             </li>
-
-            {/* <li className="nav-item">
-              <a className="nav-link" href="#">about me</a>
-            </li>
-            
-            <li className="nav-item">
-              <a className="nav-link" href="#">Experience</a>
-            </li> */}
           </ul>
         </div>
       </div>

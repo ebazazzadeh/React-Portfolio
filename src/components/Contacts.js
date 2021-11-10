@@ -47,7 +47,7 @@ const Contacts = () => {
     };
 
     return (
-        <div className="contacts">
+        <div id="contacts" className="contacts">
             <div className="text-center">
                 <h1>Contact me</h1>
                 <p>
@@ -62,7 +62,7 @@ const Contacts = () => {
                     {/* <form onSubmit={sendEmail}> */}
                     <div className="row">
                         <div className="col-md-6 col-xs-12">
-                            {/* adding bootstra text-center */}
+                            {/* adding bootstrap text-center */}
                             <div className="text-center">
                                 <input
                                     className="form-control"
