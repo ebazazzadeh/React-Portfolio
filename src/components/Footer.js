@@ -9,6 +9,11 @@ import {
     LinkedinShareButton,
     LinkedinIcon,
 } from "react-share";
+
+import { Link } from "react-scroll";
+
+// import { FaGithub } from "react-icons/fa";
+
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -32,11 +37,22 @@ const Footer = () => {
                     <div className="col-lg-3 col-md-2 col-sm-6">
                         <div className="row">
                             <div className="col">
-                                <a className="footer-nav">About Me</a>
+                                <Link smooth={true} to="aboutMe" className="footer-nav" href="#">
+                                    About Me
+                                </Link>
+                                <br/>
+                                <Link smooth={true} to="projects" className="footer-nav" href="#">
+                                    Projects
+                                </Link>
+                                <br/>
+                                <Link smooth={true} to="contacts" className="footer-nav" href="#">
+                                    Contacts
+                                </Link>
+                                {/* <a className="footer-nav" id="aboutMe">About Me</a>
                                 <br />
-                                <a className="footer-nav">Projects</a>
+                                <a className="footer-nav" id="projects">Projects</a>
                                 <br />
-                                <a className="footer-nav">contacts</a>
+                                <a className="footer-nav" id="contacts">Contacts</a> */}
                             </div>
                         </div>
                     </div>

@@ -1,19 +1,11 @@
 import React from "react";
-// import square from "../img/shapes/square.png";
-// import circle from "../img/shapes/circle.png";
-// import halfCircle from "../img/shapes/half-circle.png";
-// import x from "../img/shapes/x.png";
-// import wave from "../img/shapes/wave.png";
-// import triangle from "../img/shapes/triangle.png";
-// import my from "../img/2.png";
-// import point2 from "../img/shapes/points2.png";
+
 import my from "../img/2.png";
-// import point2 from "../img/shapes/points2.png";
 import myResume from "../docs/Elham Bazazzadeh.pdf";
 
 const AboutMe = () => {
   return (
-    <div className="container-fluid py-5 pink">
+    <div className="container-fluid py-5 pink" id="aboutMe">
       <div className="row">
         <div className="col-lg-6 col-xm-12">
           <div className="photo-wrap mb-5">
@@ -37,7 +29,7 @@ const AboutMe = () => {
             MYSQL, Node.js (Express.js, Inquirer.js, File System, Sequelize,
             MVC).
           </p>
-          <a href={myResume} className="btn">
+          <a href={myResume} className="btn" target="_blank">
             My Resume
           </a>
         </div>
